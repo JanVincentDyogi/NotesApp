@@ -22,7 +22,7 @@ const Login = () => {
       return;
     }
 
-    setError("")
+    setError("");
 
     //Login API Call
   };
@@ -44,9 +44,9 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
 
-            <PasswordInput 
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            <PasswordInput
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
 
             {error && <p className="text-red-500 text-xs pb-1">{error}</p>}
